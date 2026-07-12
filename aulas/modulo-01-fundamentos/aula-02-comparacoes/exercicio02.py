@@ -14,6 +14,6 @@ nome = "Gabriel"
 resultado = nome == "Gabriel Estanislau" or nome == "Gabriel"
 print(resultado)
 
-menor_de_idade = not idade
+menor_de_idade = not (idade >= 18)
 
 print(menor_de_idade)
