@@ -1,6 +1,6 @@
 """
 Módulo 1 - Fundamentos
-Aula 2 - Comparações
+Aula 2 - Operadores de Comparação
 Exercício 01
 Autor: Gabriel Estanislau
 Data: 12/07/2026
@@ -15,5 +15,9 @@ resultado = nome == "Gabriel"
 print(resultado)
 
 idade = 32
-print(idade == "32")
-print(idade != "32")
+
+resultado1 = idade == "32"
+resultado2 = idade != "32"
+
+print(resultado1)
+print(resultado2)
