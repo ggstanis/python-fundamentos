@@ -1,7 +1,7 @@
 """
 Módulo 1 - Fundamentos
 Aula 2.4 - Estrutura Condicional if/else
-Exercício 03
+Exercício 04
 Autor: Gabriel Estanislau
 Data: 14/07/2026
 """
@@ -10,25 +10,25 @@ Data: 14/07/2026
 nome = input("Digite seu nome: ")
 idade = int(input("Digite sua idade: "))
 possui_convite = input("Você possui o convite? (s/n): ").lower()
-maior_idade = 18
-
-# Verificação dos dados de entrada - saida de dados
-print(
-    "Nome:", nome,
-    "Idade:", idade,
-    "Convite:", possui_convite,
-    sep =" | "
-    )
 
 # Processamento
-if idade >= maior_idade and possui_convite == "s" :
+maior_idade = 18
+entrada_autorizada = (idade >= maior_idade and possui_convite == "s")
+
+ # Saída de dados
+print(
+     "Nome:", nome,
+     "Idade:", idade,
+    "Convite:", possui_convite,
+     sep=" | "
+    )
+
+if entrada_autorizada:
     print(
-        # Saída de dados
         "Entrada autorizada"
         )
 else:
     print(
-        # Saída de dados
         "Entrada negada"
         )
 
